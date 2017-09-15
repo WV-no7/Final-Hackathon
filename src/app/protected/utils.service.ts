@@ -16,8 +16,8 @@ export class UtilsService {
   firstLoad3 = true;
   firstLoad4 = true;
   checked = false;
-  url2 = "http://beagle.pythonanywhere.com/getjson2";
-  url = "http://beagle.pythonanywhere.com/getjson";
+  url2 = "https://beagle.pythonanywhere.com/getjson2";
+  url = "https://beagle.pythonanywhere.com/getjson";
   coreMetricsChanged = new EventEmitter<any>();
   slidetoggle = new EventEmitter<any>();
   goals = {
