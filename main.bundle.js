@@ -803,7 +803,7 @@ var AgentComponent = (function () {
         });
         setTimeout(function () {
             _this.loading(_this.utils.checked);
-        }, 200);
+        }, 500);
     };
     AgentComponent.prototype.afterAssignDataForLeadAgent = function () {
         this.metaData["dataProvider"] = [];
@@ -1240,7 +1240,7 @@ var CompareagentComponent = (function () {
         });
         setTimeout(function () {
             _this.loading(_this.utils.checked);
-        }, 200);
+        }, 500);
     };
     CompareagentComponent.prototype.loading = function (res) {
         var ag = this.utils.getAgents(this.data);
@@ -1535,7 +1535,7 @@ var HomeComponent = (function () {
         });
         setTimeout(function () {
             _this.loading(_this.utils.checked);
-        }, 200);
+        }, 500);
     };
     HomeComponent.prototype.lol = function () {
         return "Goal for";
@@ -1853,7 +1853,7 @@ var MainComponent = (function () {
         }
         setTimeout(function () {
             _this.loading(_this.utils.checked);
-        }, 200);
+        }, 500);
         this.http.get(this.utils.url).subscribe(function (res) {
             _this.data = res.json();
             console.log(_this.data);
@@ -2220,7 +2220,7 @@ var MetricComponent = (function () {
         var _this = this;
         setTimeout(function () {
             _this.loading(_this.utils.checked);
-        }, 200);
+        }, 500);
         this.utils.slidetoggle.subscribe(function (res) {
             if (res == true) {
                 _this.metaData.theme = "dark";
@@ -2839,7 +2839,7 @@ var TableComponent = (function () {
         });
         setTimeout(function () {
             _this.loading(_this.utils.checked);
-        }, 200);
+        }, 500);
     };
     TableComponent.prototype.afterDataReceived = function () {
         this.agents = this.utils.getAgents(this.data);
